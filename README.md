@@ -3,8 +3,8 @@ A Pseudo-Crypting Programmed in Python
 
 # Update
 
-2.0.1 : Tkinter install support Arch Linux
-2.0.2 : Auto-Restart After Installing
+- 2.0.1 : Tkinter install support Arch Linux
+- 2.0.2 : Auto-Restart After Installing
 
 #How Does it work?
 
