@@ -27,7 +27,7 @@ except:
 					os.system("sudo pacman -S tk")
 				else:
 					os.system("sudo apt-get install python-tk")
-				exit()
+				os.system("python " + sys.argv[0])
 		
 			if choice == "n":
 				print("Oops, Tkinter is a major module, we're forced to close the program")
