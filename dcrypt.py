@@ -19,7 +19,14 @@ except:
 			print("Tkinter isn't installed")
 			choice = raw_input("Would you like to install Tkinter [Y/N]?").lower()
 			if choice == "y":
-				os.system("sudo apt-get install python-tk")
+				list = []
+				file = open("/etc/os-release", "r")
+				a = file.read().replace("\n", "=")
+				list = a.split("=")
+				if list[1].replace('"', "").lower()[0:4] == "arch":
+					os.system("sudo pacman -S tk")
+				else:
+					os.system("sudo apt-get install python-tk")
 				exit()
 		
 			if choice == "n":
